@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="O-GURIH, produsen makanan tradisional seperti opak gurih dari bahan lokal berkualitas tinggi.">
+    <meta name="description"
+        content="O-GURIH, produsen makanan tradisional seperti opak gurih dari bahan lokal berkualitas tinggi.">
     <title>O-GURIH | Kuliner Tradisional</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/Logo-PT.-O-Gurih.ico"/>
+    <link rel="icon" type="image/x-icon" href="assets/Logo-PT.-O-Gurih.ico" />
 </head>
+
 <body>
     <header>
         <div class="logo-container">
@@ -30,18 +33,87 @@
         <h1>Selamat Datang di O-GURIH</h1>
         <p>Rasakan kelezatan kuliner tradisional Indonesia dengan kualitas terbaik.</p>
         <button onclick="showSection('products')" class="btn">Pesan Sekarang</button>
+        <div class="gambar-produk">
+            <h3>Gambar Produk</h3>
+            <div class="gambar-grid">
+                <div class="produk-gambar">
+                    <img src="assets/opak1.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak2.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak3.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak4.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak5.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak6.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak7.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak8.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak9.jpg" alt="Gambar Produk">
+                </div>
+                <div class="produk-gambar">
+                    <img src="assets/opak10.jpg" alt="Gambar Produk">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: About -->
+    <section id="about" class="section">
+        <h2>Tentang Kami</h2>
+        <p>O-GURIH adalah usaha kuliner yang mengedepankan makanan ringan tradisional Indonesia yang terbuat dari
+            bahan-bahan lokal berkualitas. Kami memproduksi opak gurih dengan berbagai varian rasa yang cocok untuk
+            segala usia. Dengan menggunakan ubi dan singkong sebagai bahan dasar, kami berkomitmen untuk menjaga cita
+            rasa dan kualitas produk kami.</p>
+        <div class="team-photos">
+            <h3>Pemilik O-GURIH</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="assets/1.jpeg" alt="Foto Anggota 1">
+                    <p>Libernia Waruwu</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/2.jpeg" alt="Foto Anggota 2">
+                    <p>Adryan Fahrozi</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/3.jpeg" alt="Foto Anggota 3">
+                    <p>Abdi Safi'i</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/4.jpeg" alt="Foto Anggota 4">
+                    <p>Muhammad Sandy Pratama</p>
+                </div>
+            </div>
+            <p>Kami percaya bahwa dengan bahan alami yang segar dan proses produksi yang higienis, O-GURIH dapat
+                memberikan pengalaman makan yang menyenangkan dan sehat. Nikmati rasa khas Indonesia dalam setiap
+                gigitan Opak Gurih!</p>
+        </div>
     </section>
 
     <!-- Section: Products -->
     <section id="products" class="section">
         <h2>Produk Kami</h2>
         <div class="product-grid">
+
             <!-- Product 1 -->
             <div class="product">
                 <img src="assets/opak1.jpg" alt="Opak Gurih">
-                <h3>Harga: Rp 2.500 (beli 1 gratis 1)</h3>
-                <p>Deskripsi: Opak Gurih Rasa Pedas & Original. Berat Bersih: 10 gram/pcs</p>
-                <button onclick="orderWhatsApp('Opak Gurih Rasa Pedas & Original', 'Rp 2.500 (beli 1 gratis 1)', 'Opak Gurih Rasa Pedas & Original. Berat Bersih: 10 gram/pcs')">Pesan Sekarang</button>
+                <h3>Harga: Rp 2.500 (beli 1 gratis)</h3>
+                <p>Deskripsi: Opak Gurih Rasa Pedas</p>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
             </div>
 
             <!-- Product 2 -->
@@ -49,7 +121,7 @@
                 <img src="assets/opak2.jpg" alt="Opak Gurih">
                 <h3>Harga: Rp 4.500 (beli 1 gratis 1)</h3>
                 <p>Deskripsi: Opak Gurih Rasa Pedas & Original. Berat Bersih: 20 gram/pcs</p>
-                <button onclick="orderWhatsApp('Opak Gurih Rasa Pedas & Original', 'Rp 4.500 (beli 1 gratis 1)', 'Opak Gurih Rasa Pedas & Original. Berat Bersih: 20 gram/pcs')">Pesan Sekarang</button>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
             </div>
 
             <!-- Product 3 -->
@@ -57,7 +129,7 @@
                 <img src="assets/opak3.jpg" alt="Opak Gurih">
                 <h3>Harga: Rp 1.500</h3>
                 <p>Deskripsi: Opak Gurih Rasa Pedas. Berat Bersih: 10 gram</p>
-                <button onclick="orderWhatsApp('Opak Gurih Rasa Pedas', 'Rp 1.500', 'Opak Gurih Rasa Pedas. Berat Bersih: 10 gram')">Pesan Sekarang</button>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
             </div>
 
             <!-- Product 4 -->
@@ -65,7 +137,7 @@
                 <img src="assets/opak4.jpg" alt="Opak Gurih">
                 <h3>Harga: Rp 1.500</h3>
                 <p>Deskripsi: Opak Gurih Rasa Pedas Manis. Berat Bersih: 10 gram</p>
-                <button onclick="orderWhatsApp('Opak Gurih Rasa Pedas Manis', 'Rp 1.500', 'Opak Gurih Rasa Pedas Manis. Berat Bersih: 10 gram')">Pesan Sekarang</button>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
             </div>
 
             <!-- Product 5 -->
@@ -73,7 +145,7 @@
                 <img src="assets/opak5.jpg" alt="Opak Gurih">
                 <h3>Harga: Rp 2.500</h3>
                 <p>Deskripsi: Opak Gurih Rasa Pedas Manis. Berat Bersih: 20 gram</p>
-                <button onclick="orderWhatsApp('Opak Gurih Rasa Pedas Manis', 'Rp 2.500', 'Opak Gurih Rasa Pedas Manis. Berat Bersih: 20 gram')">Pesan Sekarang</button>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
             </div>
 
             <!-- Product 6 -->
@@ -81,7 +153,39 @@
                 <img src="assets/opak6.jpg" alt="Opak Gurih">
                 <h3>Harga: Rp 3.000</h3>
                 <p>Deskripsi: Opak Gurih Rasa Pedas & Original. Berat Bersih: 10 gram/pcs</p>
-                <button onclick="orderWhatsApp('Opak Gurih Rasa Pedas & Original', 'Rp 3.000', 'Opak Gurih Rasa Pedas & Original. Berat Bersih: 10 gram/pcs')">Pesan Sekarang</button>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product">
+                <img src="assets/opak7.jpg" alt="Opak Gurih">
+                <h3>Harga: Rp 3.000</h3>
+                <p>Deskripsi: Opak Gurih Rasa Pedas & Keju. Berat Bersih: 10 gram/pcs</p>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product">
+                <img src="assets/opak8.jpg" alt="Opak Gurih">
+                <h3>Harga: Rp 3.000</h3>
+                <p>Deskripsi: Opak Gurih Rasa Pedas Manis & Keju. Berat: 10 gram/pcs</p>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product">
+                <img src="assets/opak9.jpg" alt="Opak Gurih">
+                <h3>Harga: Rp 3.000</h3>
+                <p>Deskripsi: Opak Gurih Rasa Pedas Manis & Asin. Berat: 10 gram/pcs</p>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product">
+                <img src="assets/opak10.jpg" alt="Opak Gurih">
+                <h3>Harga: Rp 1.500</h3>
+                <p>Deskripsi: Opak Gurih Rasa Keju. Berat Bersih: 10 gram</p>
+                <button onclick="orderWhatsApp()">Pesan Sekarang</button>
             </div>
         </div>
     </section>
@@ -90,19 +194,43 @@
     <section id="contact" class="section">
         <h2>Hubungi Kami</h2>
         <div class="contact-container">
-            <p><strong>Alamat:</strong> Desa Suka Sari, Kecamatan Pegajahan, Kabupaten Serdang Bedagai</p>
-            <p><strong>Email:</strong> <a href="mailto:opakgurih@gmail.com">opakgurih@gmail.com</a></p>
-            <p><strong>Telepon:</strong> <a href="tel:+6287725323752">+6287725323752</a></p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/6287725323752" target="_blank">Chat Kami di WhatsApp</a></p>
+            <!-- Contact Details -->
+            <div class="contact-info">
+                <p><strong>Alamat:</strong> Desa Suka Sari, Kecamatan Pegajahan, Kabupaten Serdang Bedagai</p>
+                <p><strong>Email:</strong> <a href="mailto:opakgurih@gmail.com">opakgurih@gmail.com</a></p>
+                <p><strong>Telepon:</strong> <a href="tel:+6287725323752">+6287725323752</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/6287725323752" target="_blank">Chat Kami diWhatsApp</a></p>
+                <p><strong>Jam Operasional:</strong><br>
+                    Senin - Jumat: 08.00 - 17.00<br>
+                    Sabtu: 08.00 - 13.00<br>
+                    Minggu/Hari Libur: Tutup
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" onsubmit="submitForm(event)">
+                <h3>Kirim Pesan</h3>
+                <input type="text" id="name" placeholder="Nama Anda" required>
+                <input type="email" id="email" placeholder="Email Anda" required>
+                <textarea id="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
         </div>
-    </section>
+        <!-- Google Maps -->
+        <div class="map-container">
+            <h3>Lokasi Kami</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31860.89051495775!2d98.96886840448784!3d3.444323277924141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30314369c7e5ab8f%3A0x323cc18d13738975!2sSukasari%2C%20Kec.%20Pegajahan%2C%20Kabupaten%20Serdang%20Bedagai%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1733753817204!5m2!1sid!2sid"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
 
-    <!-- Footer Section -->
-    <footer id="footer">
-        <p>&copy; 2024 O-GURIH. Semua Hak Dilindungi.</p>
-        <p>Hubungi kami: <a href="https://wa.me/6287725323752" target="_blank">WhatsApp</a></p>
-    </footer>
-
-    <script src="js/scripts.js"></script>
+        <!-- Footer Section -->
+        <footer id="footer">
+            <p>&copy; 2024 O-GURIH. Semua Hak Dilindungi.</p>
+            <p>Hubungi kami: <a href="https://wa.me/6287725323752" target="_blank">WhatsApp</a></p>
+        </footer>
+        <script src="js/scripts.js"></script>
 </body>
 </html>
